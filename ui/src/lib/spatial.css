@@ -1,0 +1,30 @@
+.map {
+    width: 100%;
+    height: 400px; 
+    position: relative;
+}
+.map:-webkit-full-screen {
+    height: 100%;
+    margin: 0;
+}
+.map:fullscreen {
+    height: 100%;
+}
+#infooverlay {
+    position: absolute;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    z-index: 100;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(3%);
+    visibility: hidden;
+    pointer-events: none;
+    font-size: 0.8rem;
+    font-family: monospace;
+}    
