@@ -6,6 +6,14 @@ This is an [Observable Framework](https://observablehq.com/framework/) app. To i
 yarn install
 ```
 
+Note: Observable references an older version of DuckDB WASM that lacks some features needed for this application. The
+patch file `ddb_132.patch` can be used to patch the Observable reference to DuckDB WASM so that it retrieves a 
+later version. To apply:
+
+```
+patch node_modules/@observablehq/framework/dist/duckdb.js ddb_132.patch
+```
+
 Then, to start the local preview server, run:
 
 ```
