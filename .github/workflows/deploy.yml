@@ -18,10 +18,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup node
         uses: actions/setup-node@v4
-        working-directory: ./ui
         with:
           node-version: 20
-          cache: "yarn"
+          #cache: "yarn"
       - name: Install and build
         working-directory: ./ui
         run: |
