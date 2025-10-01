@@ -240,7 +240,7 @@ async def main():
     logging.basicConfig(level=logging.INFO)
     _L = getLogger()
     #num_to_get = 100 if _TESTING else 999999
-    imlgs = IMLGS(dest_folder = "../data/json")
+    imlgs = IMLGS(dest_folder = "../data")
     #await imlgs.load_all_records(limit=num_to_get)
     #await imlgs.compute_json_schema(max_docs=-1)
     await imlgs.to_nl_json()
